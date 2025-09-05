@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   NETWORK PROGRAMMING
+   Ứng dụng chat Client-Server sử dụng TCP
 </h2>
 <div align="center">
     <p align="center">
@@ -18,3 +18,4 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
+## 📖 1. Giới thiệu
