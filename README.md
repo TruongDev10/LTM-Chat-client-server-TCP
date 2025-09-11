@@ -3,13 +3,15 @@
     🎓 Faculty of Information Technology (DaiNam University)
     </a>
 </h2>
+
 <h2 align="center">
-   Ứng dụng chat Client-Server sử dụng TCP
+   💬 Ứng dụng Chat Client-Server sử dụng TCP
 </h2>
+
 <div align="center">
     <p align="center">
         <img src="docs/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
-        <img src="docs/fitdnu_logo.png" alt="AIoTLab Logo" width="180"/>
+        <img src="docs/fitdnu_logo.png" alt="FIT Logo" width="180"/>
         <img src="docs/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
     </p>
 
@@ -19,39 +21,38 @@
 
 </div>
 
-## 📖 1. Giới thiệu
-Ứng dụng Chat Client - Server được xây dựng nhằm mô phỏng mô hình Client - Server trong môn học Mạng máy tính.  
-Hệ thống cho phép nhiều client cùng kết nối đến server để gửi/nhận tin nhắn theo giao thức TCP Socket.  
+---
 
-Chức năng chính:
+## 📖 1. Giới thiệu
+Ứng dụng **Chat Client - Server** được xây dựng nhằm mô phỏng mô hình **Client - Server** trong môn học *Mạng máy tính*.  
+Hệ thống cho phép nhiều client cùng kết nối đến server để gửi/nhận tin nhắn theo giao thức **TCP Socket**.  
+
+**Chức năng chính:**
 - Kết nối client-server thông qua TCP.
 - Trò chuyện thời gian thực.
 - Hỗ trợ nhiều client cùng lúc.
+- Lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này.
 - Giao diện console/GUI trực quan.
 
-## 🔧2. Ngôn ngữ lập trình sử dụng:
-- Ngôn ngữ lập trình: Python (hoặc Java/C# tuỳ phiên bản).
-- Giao thức: TCP/IP (Socket Programming).
-- Môi trường phát triển: VS Code / PyCharm / Eclipse.
-- Hệ điều hành: Windows / Linux / macOS.
+---
 
-Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này
+## 🔧 2. Ngôn ngữ & Công nghệ
+- **Ngôn ngữ lập trình:** Python (hoặc Java/C# tùy phiên bản).  
+- **Giao thức:** TCP/IP (Socket Programming).  
+- **Môi trường phát triển:** VS Code / PyCharm / Eclipse.  
+- **Hệ điều hành:** Windows / Linux / macOS.  
 
-## 🚀 3. Hình ảnh các chức năng
-<img width="1920" height="919" alt="image" src="./docs/z7000792131271_6f48185c7ac5889787147aad5b7a4152.jpg" />
+---
+
+## 🖼️ 3. Hình ảnh minh họa
+<img width="100%" alt="Chat Function Demo" src="./docs/z7000792131271_6f48185c7ac5889787147aad5b7a4152.jpg" />
+
+---
+
+## 🚀 4. Các bước cài đặt
+
+### 📦 1. Cài đặt thư viện cần thiết
+```bash
+pip install -r requirements.txt
 
 
-## 🚀 3. Các bước cài đặt
-
-📦 1. **Cài đặt thư viện cần thiết**  
-     ```
-    pip install -r requirements.txt
-     ```  
-
-2. **Chạy chương trình Server**  
-
-     ```python server.py
-     ```
-📝 4. License
-
-© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
