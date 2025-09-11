@@ -49,10 +49,58 @@ Hệ thống cho phép nhiều client cùng kết nối đến server để gử
 
 ---
 
+Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đóng \`\`\` và căn dòng không chuẩn.
+Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
+
+````markdown
 ## 🚀 4. Các bước cài đặt
 
 ### 📦 1. Cài đặt thư viện cần thiết
 ```bash
 pip install -r requirements.txt
+````
 
+### ▶️ 2. Chạy chương trình Server
 
+```bash
+python server.py
+```
+
+### 💻 3. Chạy chương trình Client
+
+```bash
+python client.py
+```
+
+### 🌐 4. Kết nối nhiều client
+
+* Mở thêm nhiều cửa sổ terminal và chạy:
+
+  ```bash
+  python client.py
+  ```
+* Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
+
+### 🖧 5. Chạy qua mạng LAN
+
+* **Trên máy Server**: chạy
+
+  ```bash
+  python server.py
+  ```
+
+  Ghi lại địa chỉ IP (ví dụ: `192.168.1.10`).
+
+* **Trên máy Client**: mở file `client.py` và thay `localhost` bằng địa chỉ IP của server.
+  Sau đó chạy:
+
+  ```bash
+  python client.py
+  ```
+
+👉 Giờ các máy trong cùng mạng LAN có thể chat với nhau qua server.
+
+```
+
+Bạn có muốn mình thêm luôn **cách kiểm tra IP server trên Windows/Linux/Mac** để ai cài cũng làm được không?
+```
