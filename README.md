@@ -38,5 +38,3 @@ Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy x
 
 3. Các project đã thực hiện
    
-
-
