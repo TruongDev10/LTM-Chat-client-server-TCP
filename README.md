@@ -18,8 +18,8 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
-## 📖 1. Giới thiệu
 
+## 📖 1. Giới thiệu
 Ứng dụng Chat Client - Server được xây dựng nhằm mô phỏng mô hình Client - Server trong môn học Mạng máy tính.  
 Hệ thống cho phép nhiều client cùng kết nối đến server để gửi/nhận tin nhắn theo giao thức TCP Socket.  
 
