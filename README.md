@@ -39,3 +39,8 @@ Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy x
 
 ## 🚀 3. Hình ảnh các chức năng
 <img width="1920" height="919" alt="image" src="./docs/z7000792131271_6f48185c7ac5889787147aad5b7a4152.jpg" />
+
+
+📝 4. License
+
+© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
