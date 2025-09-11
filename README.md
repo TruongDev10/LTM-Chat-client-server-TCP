@@ -29,7 +29,7 @@ Chức năng chính:
 - Hỗ trợ nhiều client cùng lúc.
 - Giao diện console/GUI trực quan.
 
-## 🔧2. Ngôn ngữ & Công nghệ chính
+## 🔧2. Ngôn ngữ lập trình sử dụng:
 - Ngôn ngữ lập trình: Python (hoặc Java/C# tuỳ phiên bản).
 - Giao thức: TCP/IP (Socket Programming).
 - Môi trường phát triển: VS Code / PyCharm / Eclipse.
