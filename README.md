@@ -38,4 +38,4 @@ Chức năng chính:
 Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này
 
 ## 🚀 3. Hình ảnh các chức năng
-
+<img width="1920" height="919" alt="image" src="" />
