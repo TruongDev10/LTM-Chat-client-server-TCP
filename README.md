@@ -18,7 +18,7 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
-1. Giới thiệu hệ thống
+## 📖 1. Giới thiệu Hệ Thống
 Ứng dụng Chat Client - Server được xây dựng nhằm mô phỏng mô hình Client - Server trong môn học Mạng máy tính.  
 Hệ thống cho phép nhiều client cùng kết nối đến server để gửi/nhận tin nhắn theo giao thức TCP Socket.  
 
@@ -28,7 +28,7 @@ Chức năng chính:
 - Hỗ trợ nhiều client cùng lúc.
 - Giao diện console/GUI trực quan.
 
-2. Ngôn ngữ & Công nghệ chính
+## 🔧2. Ngôn ngữ & Công nghệ chính
 - Ngôn ngữ lập trình: Python (hoặc Java/C# tuỳ phiên bản).
 - Giao thức: TCP/IP (Socket Programming).
 - Môi trường phát triển: VS Code / PyCharm / Eclipse.
@@ -36,5 +36,5 @@ Chức năng chính:
 
 Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này
 
-3. Hình ảnh các chức năng
+## 🚀 3. Hình ảnh các chức năng
 
