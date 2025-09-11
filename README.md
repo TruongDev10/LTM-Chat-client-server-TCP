@@ -43,26 +43,15 @@ Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy x
 
 ## 🚀 3. Các bước cài đặt
 
-📦 1. Cài đặt thư viện cần thiết
- ```
+📦 1. **Cài đặt thư viện cần thiết**  
+     ```
     pip install -r requirements.txt
      ```  
 
+2. **Chạy chương trình Server**  
 
-▶️ 3. Chạy chương trình Server
- ```
-    python server.py
+     ```python server.py
      ```
-
-💻 4. Chạy chương trình Client
- ```
-    python client.py
-     ```
-
-🌐 5. Kết nối nhiều client
-    - Mở thêm nhiều cửa sổ terminal và chạy python client.py.
-    - Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
-
 📝 4. License
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
