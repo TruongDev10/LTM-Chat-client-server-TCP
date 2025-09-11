@@ -45,7 +45,7 @@ Hệ thống cho phép nhiều client cùng kết nối đến server để gử
 ---
 
 ## 🖼️ 3. Hình ảnh minh họa
-<img width="100%" alt="Chat Function Demo" src="./docs/z7000792131271_6f48185c7ac5889787147aad5b7a4152.jpg" />
+<img width="100%" alt="Chat Function Demo" src="./docs/giaodiện.jpg" />
 
 ---
 
