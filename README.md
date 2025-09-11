@@ -28,3 +28,4 @@ Kết thúc dự án, sinh viên có thể:
 Hiểu và áp dụng được cơ chế kết nối TCP Socket trong Java.
 Xây dựng ứng dụng chat có giao diện đồ họa cơ bản.
 Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này
+🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
