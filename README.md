@@ -36,5 +36,5 @@ Chức năng chính:
 
 Cài đặt chức năng lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này
 
-3. Các project đã thực hiện
-   
+3. Hình ảnh các chức năng
+
