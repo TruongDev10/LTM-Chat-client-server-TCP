@@ -53,74 +53,20 @@ Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đ
 Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
 
 ````markdown
-## 🚀 4. Cài đặt & Sử dụng
+⚙️ Bước 1: Chuẩn bị môi trường
 
----
+Kiểm tra Java
+Mở terminal/command prompt và chạy:
 
-### 📦 Phần 1: Biên dịch chương trình
-Di chuyển vào thư mục chứa mã nguồn, sau đó biên dịch các file Java:
+java -version
+javac -version
 
-```bash
-javac Server.java Client.java
-```
 
----
+Đảm bảo cả hai lệnh đều hiển thị phiên bản Java 8 trở lên.
 
-### ▶️ Phần 2: Chạy chương trình Server
-Khởi động **Server** trước:
+Mã nguồn
+Thư mục UngDungChat_TCP chứa các file:
 
-```bash
-java Server
-```
+Server.java → Chạy server để quản lý các kết nối client.
 
-Màn hình **Server Chat** sẽ xuất hiện và chờ Client kết nối.
-
----
-
-### 💻 Phần 3: Chạy chương trình Client
-Mở một terminal khác và chạy:
-
-```bash
-java Client
-```
-
-Màn hình **Client Chat** sẽ hiện ra và tự động kết nối tới Server.
-
----
-
-### 🌐 Phần 4: Kết nối nhiều Client
-- Mở thêm nhiều cửa sổ terminal (hoặc chạy trên nhiều máy).  
-- Thực hiện lệnh:
-
-```bash
-java Client
-```
-
-👉 Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
-
----
-
-### 🖧 Phần 5: Chạy qua mạng LAN
-1. **Trên máy Server**:  
-   - Chạy server:  
-     ```bash
-     java Server
-     ```  
-   - Kiểm tra địa chỉ IP máy chủ:  
-     - Windows: `ipconfig`  
-     - Linux/macOS: `ifconfig` hoặc `ip addr`
-
-2. **Trên máy Client**:  
-   - Mở file `Client.java`  
-   - Thay `"localhost"` bằng IP của server, ví dụ:  
-     ```java
-     Socket socket = new Socket("192.168.1.10", 12345);
-     ```
-
-3. Biên dịch và chạy lại client:  
-   ```bash
-   javac Client.java
-   java Client
-   ```
-
-👉 Giờ các máy trong cùng mạng LAN có thể chat với nhau thông qua server.
+Client.java → Giao diện người dùng, cho phép nhiều người tham gia chat.
