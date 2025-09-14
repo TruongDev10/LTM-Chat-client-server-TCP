@@ -54,87 +54,26 @@ Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có hig
 
 ````markdown
 ## 📝 4. Hướng dẫn cài đặt và sử dụng
+# 💬 ỨNG DỤNG CHAT TCP (JAVA SWING)
 
-⚙️ 2. CHUẨN BỊ MÔI TRƯỜNG
+Ứng dụng chat nhiều người dùng qua TCP Socket, hỗ trợ giao diện **GUI** (Java Swing) với tin nhắn dạng bong bóng, hiển thị thời gian và trạng thái online.
 
-Kiểm tra Java
-Mở terminal/command prompt và chạy:
+---
 
-java -version
-javac -version
+## 📝 1. YÊU CẦU HỆ THỐNG
 
+- **Java Development Kit (JDK)**: Phiên bản 8 trở lên  
+- **Hệ điều hành**: Windows, macOS hoặc Linux  
+- **Môi trường phát triển**: IDE (IntelliJ IDEA, Eclipse, VS Code) hoặc terminal/command prompt  
+- **Bộ nhớ**: Tối thiểu 512MB RAM  
+- **Dung lượng**: Khoảng 10MB cho mã nguồn và file thực thi  
 
-Đảm bảo cả hai lệnh đều hiển thị phiên bản Java 8 trở lên.
+---
 
-Mã nguồn
-Thư mục UngDungChat_TCP chứa các file:
+## ⚙️ 2. CHUẨN BỊ MÔI TRƯỜNG
 
-Server.java → Chạy server để quản lý các kết nối client.
-
-Client.java → Giao diện người dùng, cho phép nhiều người tham gia chat.
-
-🛠️ 3. BIÊN DỊCH MÃ NGUỒN
-
-Mở terminal và điều hướng đến thư mục chứa mã nguồn.
-
-Biên dịch toàn bộ file .java:
-
-javac UngDungChat_TCP/*.java
-
-
-Hoặc biên dịch từng file riêng lẻ:
-
-javac UngDungChat_TCP/Server.java
-javac UngDungChat_TCP/Client.java
-
-
-Kết quả: Nếu biên dịch thành công, sẽ tạo ra các file .class tương ứng.
-
-▶️ 4. CHẠY CHƯƠNG TRÌNH
-
-Chạy Server
-
-java UngDungChat_TCP.Server
-
-
-Server sẽ khởi động, lắng nghe trên cổng 12345.
-
-Giao diện server hiển thị danh sách client online.
-
-Tin nhắn được lưu vào file chat_history.txt.
-
-Chạy Client
-Mở một terminal mới (có thể chạy nhiều terminal để test nhiều user):
-
-java UngDungChat_TCP.Client
-
-
-Nhập tên người dùng khi được yêu cầu (ví dụ: Lanh, Hoa, Minh).
-
-Giao diện chat sẽ hiển thị, hỗ trợ gửi/nhận tin nhắn thời gian thực.
-
-💡 5. HƯỚNG DẪN SỬ DỤNG
-
-Kết nối: Client tự động kết nối đến server sau khi nhập tên.
-
-Gửi tin nhắn: Nhập vào ô soạn thảo và nhấn Enter hoặc nút Send.
-
-Nhận tin nhắn: Hiển thị trong giao diện chat dưới dạng bong bóng kèm thời gian.
-
-Trạng thái:
-
-🔵 Online khi user kết nối.
-
-🔴 Offline khi user thoát.
-
-Lịch sử chat: Được lưu trong file chat_history.txt.
-
-👤 THÔNG TIN CÁ NHÂN
-
-Họ tên: Nguyễn Thị Lan Anh
-
-Lớp: CNTT 16-03
-
-Email: lananh.2402.nt@gmail.com
-
-© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
+1. **Kiểm tra Java**  
+   Mở terminal/command prompt và chạy:
+   ```bash
+   java -version
+   javac -version
