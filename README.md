@@ -21,7 +21,6 @@
 
 </div>
 
----
 
 ## 📖 1. Giới thiệu
 Ứng dụng **Chat Client - Server** được xây dựng nhằm mô phỏng mô hình **Client - Server** trong môn học *Mạng máy tính*.  
@@ -34,7 +33,6 @@ Hệ thống cho phép nhiều client cùng kết nối đến server để gử
 - Lưu trữ tin nhắn phục vụ quản lý và truy xuất sau này.
 - Giao diện console/GUI trực quan.
 
----
 
 ## 🔧 2. Ngôn ngữ & Công nghệ
 - **Ngôn ngữ lập trình:** Python (hoặc Java/C# tùy phiên bản).  
@@ -42,38 +40,64 @@ Hệ thống cho phép nhiều client cùng kết nối đến server để gử
 - **Môi trường phát triển:** VS Code / PyCharm / Eclipse.  
 - **Hệ điều hành:** Windows / Linux / macOS.  
 
----
 
 ## 🖼️ 3. Hình ảnh minh họa
 <img width="100%" alt="Chat Function Demo" src="./docs/chính.jpg" />
 
----
-
-Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đóng \`\`\` và căn dòng không chuẩn.
-Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
-
-````markdown
 ## 📝 4. Hướng dẫn cài đặt và sử dụng
-# 💬 ỨNG DỤNG CHAT TCP (JAVA SWING)
 
-Ứng dụng chat nhiều người dùng qua TCP Socket, hỗ trợ giao diện **GUI** (Java Swing) với tin nhắn dạng bong bóng, hiển thị thời gian và trạng thái online.
+### 📦 Phần 1: Biên dịch chương trình
+Di chuyển vào thư mục chứa mã nguồn, sau đó biên dịch các file Java:
 
----
+```bash
+javac Server.java Client.java
+```
 
-## 📝 1. YÊU CẦU HỆ THỐNG
+### ▶️ Phần 2: Chạy chương trình Server
+Khởi động **Server** trước:
 
-- **Java Development Kit (JDK)**: Phiên bản 8 trở lên  
-- **Hệ điều hành**: Windows, macOS hoặc Linux  
-- **Môi trường phát triển**: IDE (IntelliJ IDEA, Eclipse, VS Code) hoặc terminal/command prompt  
-- **Bộ nhớ**: Tối thiểu 512MB RAM  
-- **Dung lượng**: Khoảng 10MB cho mã nguồn và file thực thi  
+```bash
+java Server
+```
 
----
+Màn hình **Server Chat** sẽ xuất hiện và chờ Client kết nối.
 
-## ⚙️ 2. CHUẨN BỊ MÔI TRƯỜNG
+### 💻 Phần 3: Chạy chương trình Client
+Mở một terminal khác và chạy:
 
-1. **Kiểm tra Java**  
-   Mở terminal/command prompt và chạy:
-   ```bash
-   java -version
-   javac -version
+```bash
+java Client
+```
+
+Màn hình **Client Chat** sẽ hiện ra và tự động kết nối tới Server.
+
+
+### 🌐 Phần 4: Kết nối nhiều Client
+- Mở thêm nhiều cửa sổ terminal (hoặc chạy trên nhiều máy).  
+- Thực hiện lệnh:
+
+```bash
+java Client
+```
+
+👉 Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
+
+
+### 🚀 Sử dụng ứng dụng
+
+Kết nối: Client sẽ tự động kết nối đến Server sau khi chạy chương trình.
+
+Gửi tin nhắn: Gõ tin nhắn trong cửa sổ console và nhấn Enter để gửi.
+
+Nhận tin nhắn: Tất cả tin nhắn từ các Client khác sẽ hiển thị trên màn hình chat.
+
+Kết nối nhiều Client: Có thể mở nhiều cửa sổ Client để nhiều người cùng tham gia chat.
+
+Ngắt kết nối: Đóng cửa sổ Client hoặc nhấn Ctrl+C để thoát khỏi ứng dụng.
+
+## Thông tin cá nhân
+**Họ tên**: Bùi Văn Trường  
+**Lớp**: CNTT 16-03.  
+**Email**: buidaigiagia2k4@gmail.com.
+
+© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
