@@ -53,20 +53,19 @@ Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đ
 Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
 
 ````markdown
-⚙️ Bước 1: Chuẩn bị môi trường
 
-Kiểm tra Java
-Mở terminal/command prompt và chạy:
+### 📦4. Cài đặt và triển khai
 
-java -version
-javac -version
+#### Bước 1: Chuẩn bị môi trường
+1. **Kiểm tra Java**: Mở terminal/command prompt và chạy:
+   ```bash
+   java -version
+   javac -version
+   ```
+   Đảm bảo cả hai lệnh đều hiển thị phiên bản Java 8 trở lên.
 
+2. **Tải mã nguồn**: Sao chép thư mục `UngDungChat_TCP` chứa các file:
+   - `Server.java`
+   - `Client.java`
 
-Đảm bảo cả hai lệnh đều hiển thị phiên bản Java 8 trở lên.
-
-Mã nguồn
-Thư mục UngDungChat_TCP chứa các file:
-
-Server.java → Chạy server để quản lý các kết nối client.
-
-Client.java → Giao diện người dùng, cho phép nhiều người tham gia chat.
+#### Bước 2: Biên dịch mã nguồn
