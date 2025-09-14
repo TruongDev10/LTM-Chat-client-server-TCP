@@ -53,54 +53,66 @@ Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đ
 Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
 
 ````markdown
-## 🚀 4. Các bước cài đặt
+## 🚀 4. Các bước cài đặt & chạy chương trình
 
-### 📦 1. Cài đặt thư viện cần thiết
+### 📦 1. Biên dịch chương trình
+Di chuyển vào thư mục chứa mã nguồn, sau đó biên dịch các file Java:
+
 ```bash
-pip install -r requirements.txt
-````
+javac Server.java Client.java
+```
 
 ### ▶️ 2. Chạy chương trình Server
+Khởi động server trước:
 
 ```bash
-python server.py
+java Server
 ```
+
+Màn hình **Server Chat** sẽ hiện ra, sẵn sàng chờ client kết nối.
 
 ### 💻 3. Chạy chương trình Client
+Mở một terminal khác và chạy:
 
 ```bash
-python client.py
+java Client
 ```
 
-### 🌐 4. Kết nối nhiều client
+Màn hình **Client Chat** sẽ hiện ra và tự động kết nối đến server.
 
-* Mở thêm nhiều cửa sổ terminal và chạy:
+### 🌐 4. Kết nối nhiều Client
+* Mở thêm nhiều cửa sổ terminal (hoặc chạy trên nhiều máy khác nhau).  
+* Gõ lệnh sau để mở thêm client:
 
   ```bash
-  python client.py
+  java Client
   ```
-* Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
+
+👉 Mỗi cửa sổ client sẽ tương ứng với một người dùng khác trong phòng chat.
 
 ### 🖧 5. Chạy qua mạng LAN
+1. **Trên máy Server**: chạy
 
-* **Trên máy Server**: chạy
+   ```bash
+   java Server
+   ```
 
-  ```bash
-  python server.py
-  ```
+   Sau đó kiểm tra địa chỉ IP của máy chủ:
+   - Windows: `ipconfig`
+   - Linux/macOS: `ifconfig` hoặc `ip addr`
 
-  Ghi lại địa chỉ IP (ví dụ: `192.168.1.10`).
+2. **Trên máy Client**:  
+   Mở file `Client.java` và thay giá trị `"localhost"` bằng IP của server, ví dụ:
 
-* **Trên máy Client**: mở file `client.py` và thay `localhost` bằng địa chỉ IP của server.
-  Sau đó chạy:
+   ```java
+   Socket socket = new Socket("192.168.1.10", 12345);
+   ```
 
-  ```bash
-  python client.py
-  ```
+3. Biên dịch và chạy lại client:
 
-👉 Giờ các máy trong cùng mạng LAN có thể chat với nhau qua server.
+   ```bash
+   javac Client.java
+   java Client
+   ```
 
-```
-
-Bạn có muốn mình thêm luôn **cách kiểm tra IP server trên Windows/Linux/Mac** để ai cài cũng làm được không?
-```
+👉 Giờ các máy trong cùng mạng LAN có thể chat với nhau thông qua server.
