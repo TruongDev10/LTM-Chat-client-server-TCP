@@ -53,63 +53,71 @@ Mình hiểu rồi 👍 Bạn đang bị lỗi Markdown do thiếu dấu mở/đ
 Mình viết lại nguyên khối **chuẩn Markdown, căn dòng đẹp, có highlight code** để bạn copy vào README là hiển thị gọn gàng ngay:
 
 ````markdown
-## 🚀 4. Các bước cài đặt & chạy chương trình
+## 🚀 4. Cài đặt & Sử dụng
 
-### 📦 1. Biên dịch chương trình
+---
+
+### 📦 Phần 1: Biên dịch chương trình
 Di chuyển vào thư mục chứa mã nguồn, sau đó biên dịch các file Java:
 
 ```bash
 javac Server.java Client.java
 ```
 
-### ▶️ 2. Chạy chương trình Server
-Khởi động server trước:
+---
+
+### ▶️ Phần 2: Chạy chương trình Server
+Khởi động **Server** trước:
 
 ```bash
 java Server
 ```
 
-Màn hình **Server Chat** sẽ hiện ra, sẵn sàng chờ client kết nối.
+Màn hình **Server Chat** sẽ xuất hiện và chờ Client kết nối.
 
-### 💻 3. Chạy chương trình Client
+---
+
+### 💻 Phần 3: Chạy chương trình Client
 Mở một terminal khác và chạy:
 
 ```bash
 java Client
 ```
 
-Màn hình **Client Chat** sẽ hiện ra và tự động kết nối đến server.
+Màn hình **Client Chat** sẽ hiện ra và tự động kết nối tới Server.
 
-### 🌐 4. Kết nối nhiều Client
-* Mở thêm nhiều cửa sổ terminal (hoặc chạy trên nhiều máy khác nhau).  
-* Gõ lệnh sau để mở thêm client:
+---
 
-  ```bash
-  java Client
-  ```
+### 🌐 Phần 4: Kết nối nhiều Client
+- Mở thêm nhiều cửa sổ terminal (hoặc chạy trên nhiều máy).  
+- Thực hiện lệnh:
 
-👉 Mỗi cửa sổ client sẽ tương ứng với một người dùng khác trong phòng chat.
+```bash
+java Client
+```
 
-### 🖧 5. Chạy qua mạng LAN
-1. **Trên máy Server**: chạy
+👉 Mỗi cửa sổ sẽ là một người dùng khác tham gia chat.
 
-   ```bash
-   java Server
-   ```
+---
 
-   Sau đó kiểm tra địa chỉ IP của máy chủ:
-   - Windows: `ipconfig`
-   - Linux/macOS: `ifconfig` hoặc `ip addr`
+### 🖧 Phần 5: Chạy qua mạng LAN
+1. **Trên máy Server**:  
+   - Chạy server:  
+     ```bash
+     java Server
+     ```  
+   - Kiểm tra địa chỉ IP máy chủ:  
+     - Windows: `ipconfig`  
+     - Linux/macOS: `ifconfig` hoặc `ip addr`
 
 2. **Trên máy Client**:  
-   Mở file `Client.java` và thay giá trị `"localhost"` bằng IP của server, ví dụ:
+   - Mở file `Client.java`  
+   - Thay `"localhost"` bằng IP của server, ví dụ:  
+     ```java
+     Socket socket = new Socket("192.168.1.10", 12345);
+     ```
 
-   ```java
-   Socket socket = new Socket("192.168.1.10", 12345);
-   ```
-
-3. Biên dịch và chạy lại client:
-
+3. Biên dịch và chạy lại client:  
    ```bash
    javac Client.java
    java Client
