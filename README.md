@@ -98,6 +98,6 @@ Ngắt kết nối: Đóng cửa sổ Client hoặc nhấn Ctrl+C để thoát k
 ## Thông tin cá nhân
 **Họ tên**: Bùi Văn Trường  
 **Lớp**: CNTT 16-03.  
-**Email**: buidaigiagia2k4@gmail.com.
+**Email**: buitruong@gmail.com.
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
