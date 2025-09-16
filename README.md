@@ -5,7 +5,7 @@
 </h2>
 
 <h2 align="center">
-   💬 Ứng dụng Chat Client-Server sử dụng TCP
+   💬 ỨNG DỤNG CHAT ClIENT-SERVER SỬ DỤNG TCP
 </h2>
 
 <div align="center">
